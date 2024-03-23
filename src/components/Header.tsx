@@ -8,20 +8,22 @@ const Header = () => {
     setActive(nav);
   };
   return (
-    <div className="flex justify-between py-2 px-10">
+    <div className="flex justify-between py-4 bg-black/40 z-10 fixed w-full px-16 border-b-2 pb-2">
       <div>
-        <h1 className="text-lg font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 inline-block text-transparent bg-clip-text">
+        <h1 className="text-lg font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
           {"<"}Vamsi{"/>"} <br />
         </h1>
       </div>
 
-      <div className="flex justify-between w-6/12 text-white">
+      <div className="flex justify-between w-6/12 text-white ">
         {navItems?.map((nav: any) => (
           <a
-            onClick={() => handleActiveLink(nav.path)}
+            onClick={() => handleActiveLink(nav.title)}
             key={nav.id}
             className={`${
-              active ? "font-semibold cursor-pointer" : "cursor-pointer"
+              nav.title === active
+                ? "font-bold cursor-pointer text-pink-600 overflow-y-scroll "
+                : "cursor-pointer"
             }`}
             href={nav.path}
           >

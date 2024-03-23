@@ -37,7 +37,10 @@ const About = () => {
 
           <button className="py-4 font-mono">
             Let's talk{" "}
-            <a href="#contact" className="">
+            <a
+              href="#contact"
+              className="hover:translate-x-8  transform duration-300 text-2xl"
+            >
               {"->"}
             </a>
           </button>
@@ -123,7 +126,7 @@ const About = () => {
                 2024
               </span>
               <span className="absolute flex items-center justify-center w-2 h-2 bg-green-200 rounded-full -start-1.5 ring-4 ring-white "></span>
-              <div className="bg-neutral-800 p-4 hover:shadow-xl hover:shadow-neutral-600 transition duration-500 cursor-pointer hover:shadow-xl hover:shadow-neutral-600 transition duration-500 cursor-pointer">
+              <div className="bg-neutral-800 p-4 hover:shadow-xl hover:shadow-neutral-600 transition duration-500 cursor-pointer">
                 <h3 className="font-medium leading-tight">Namaste React</h3>
                 <p className="text-sm">
                   namaste.dev foundation by akshay saini
@@ -136,7 +139,7 @@ const About = () => {
                 2023 may
               </span>
               <span className="absolute flex items-center justify-center w-2 h-2 bg-green-200 rounded-full -start-1.5 ring-4 ring-white "></span>
-              <div className="bg-neutral-800 p-4 hover:shadow-xl hover:shadow-neutral-600 transition duration-500 cursor-pointer hover:shadow-xl hover:shadow-neutral-600 transition duration-500 cursor-pointer">
+              <div className="bg-neutral-800 p-4 hover:shadow-xl hover:shadow-neutral-600 transition duration-500 cursor-pointer">
                 <h3 className="font-medium leading-tight">
                   Frontend Developer
                 </h3>
@@ -149,7 +152,7 @@ const About = () => {
                 2022 april
               </span>
               <span className="absolute flex items-center justify-center w-2 h-2 bg-green-200 rounded-full -start-1.5 ring-4 ring-white "></span>
-              <div className="bg-neutral-800 p-4 hover:shadow-xl hover:shadow-neutral-600 transition duration-500 cursor-pointer hover:shadow-xl hover:shadow-neutral-600 transition duration-500 cursor-pointer">
+              <div className="bg-neutral-800 p-4 hover:shadow-xl hover:shadow-neutral-600 transition duration-500 cursor-pointer">
                 <h3 className="font-medium leading-tight">
                   Continuous Capacity Building program Intensive Bootcamp
                   Trainee

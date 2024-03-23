@@ -169,7 +169,7 @@ const Contact = () => {
               d="m9 17 8 2L9 1 1 19l8-2Zm0 0V9"
             />
           </svg>
-          <div className="ps-4 text-sm font-normal">{errMessage}</div>
+          <div className="ps-4 text-sm font-normal z-50">{errMessage}</div>
         </div>
       ) : null}
     </div>

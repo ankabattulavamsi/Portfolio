@@ -66,7 +66,7 @@ const Profile = () => {
               </a>
             </button>
             <button className="border-[#13C5FD] border-2 px-9 py-4 mx-auto text-xl font-bold tracking-wider">
-              More About Me
+              <a href="#about">More About Me</a>
             </button>
           </div>
         </div>

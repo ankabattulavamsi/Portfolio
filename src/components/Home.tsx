@@ -9,26 +9,26 @@ import Footer from "./Footer";
 
 const Home = () => {
   return (
-    <div className="text-white">
+    <div className="text-white w-full">
+      <div id="home">
+        <Header />
+      </div>
       <div className="px-16 ">
-        <div id="home">
-          <Header />
-        </div>
-        <div id="profile" className="">
+        <div id="profile" className="pt-6">
           <Profile />
         </div>
-        <div id="about">
+        <div id="about" className="pt-10">
           <About />
         </div>
-        <div id="tech" className="">
+        <div id="tech" className="pt-16">
           <TechStack />
         </div>
 
-        <div id="projects">
+        <div id="projects" className="pt-10">
           <Projects />
         </div>
       </div>
-      <div id="contact" className="">
+      <div id="contact" className="mt-28 pt-4">
         <Contact />
         <Footer />
       </div>
