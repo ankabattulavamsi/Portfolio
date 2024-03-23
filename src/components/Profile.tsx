@@ -36,7 +36,7 @@ const Profile = () => {
   };
 
   return (
-    <div className=" flex justify-between  mx-10 py-16">
+    <div className="flex justify-between py-16">
       <div className="text-white w-6/12 flex items-center ">
         <div>
           <h1 className="text-4xl text-center font-bold font-serif leading-snug">
@@ -54,13 +54,16 @@ const Profile = () => {
 
           <div className="flex justify-center items-center mx-auto py-16">
             <button
-              onClick={downloadPDF}
+              // onClick={downloadPDF}
               className="border-[#13C5FD] border-2 px-16 py-4 mx-auto text-xl font-bold tracking-wider"
             >
-              Resume
-              {/* <a download href="../../public/example.pdf" target="_blank">
+              <a
+                href="https://drive.google.com/file/d/1OaSdDmRbq_0QHA_GzMZbotrqHu_tVxDu/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Resume
-              </a> */}
+              </a>
             </button>
             <button className="border-[#13C5FD] border-2 px-9 py-4 mx-auto text-xl font-bold tracking-wider">
               More About Me
