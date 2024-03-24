@@ -3,17 +3,17 @@ import { skills } from "../constants/Skills";
 
 const About = () => {
   return (
-    <div className="mx-10">
+    <div className="md:mx-10 mx-4 w-full">
       <h1 className="font-bold text-center text-4xl leading-loose">About Me</h1>
       <div className="flex justify-center py-6">
-        <h1 className="text-center text-slate-300 text-xl w-6/12">
+        <h1 className="text-center text-slate-300 text-xl md:w-6/12">
           Here you will find more information about me, what I do, and my
           current skills mostly in terms of programming and technology
         </h1>
       </div>
 
-      <div className="flex justify-around space-x-10 py-10">
-        <div className="">
+      <div className="md:flex md:justify-around md:space-x-10 py-10">
+        <div className="w-full">
           <h1 className="text-3xl font-bold pb-10 ">Get to know me!</h1>
           <div className=" text-lg text-gray-300">
             <p className="py-2">
@@ -46,7 +46,7 @@ const About = () => {
           </button>
         </div>
 
-        <div className="">
+        <div className="w-full">
           <h1 className="text-3xl font-bold pb-10 ">My Skills</h1>
           <div className=" flex flex-wrap">
             {skills?.map((skill) => (
@@ -61,7 +61,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex justify-around py-10 pb-24">
+      <div className="md:flex md:justify-around lg:flex lg:justify-around py-10 pb-24 ">
         <div>
           <h1 className="text-center font-bold font-serif text-3xl my-6">
             Education

@@ -56,22 +56,22 @@ const Contact = () => {
           Contact
         </h1>
       </div>
-      <div className="flex justify-evenly">
-        <div className="w-4/12">
+      <div className="md:flex md:justify-evenly space-y-10">
+        <div className="md:w-4/12">
           <h1 className="font-bold text-4xl mb-16 leading-tight tracking-wider">
             Let's discuss <br /> on something
             <span className="text-pink-600"> cool </span> <br /> together
           </h1>
-          <div className="w-10/12 ">
+          <div className="md:w-10/12 w-full">
             {personData?.map((p: any) => (
-              <div className="cursor-pointer flex my-2 py-4  hover:bg-pink-500  px-4  hover:bg-opacity-30 rounded-xl  border-pink-500">
+              <div className="cursor-pointer flex  py-4  hover:bg-pink-500  md:px-4  hover:bg-opacity-30 rounded-xl  border-pink-500">
                 <p>{p.svgIcon}</p>{" "}
-                <p className="ml-4 font-mono font-medium ">{p.title}</p>
+                <p className="ml-4 font-mono font-medium w-full">{p.title}</p>
               </div>
             ))}
           </div>
 
-          <ul className="flex justify-evenly mt-16 -ml-14">
+          <ul className="flex md:justify-evenly md:mt-16 md:-ml-14 space-x-10 ">
             {socialIcons?.map((social: any) => (
               <a
                 //   onClick={() => (window.location.href = social.path)}
@@ -85,7 +85,7 @@ const Contact = () => {
           </ul>
         </div>
 
-        <div className="w-4/12 bg-grey px-10 py-6 bg-white rounded-2xl">
+        <div className="md:w-4/12 bg-grey px-10 py-6 bg-white rounded-2xl">
           <h1 className="text-black py-4 font-semibold mb-4">
             Have a question or want to work together?
           </h1>
@@ -125,7 +125,7 @@ const Contact = () => {
             <button
               type="submit"
               value="Send"
-              className="bg-pink-600 px-10 py-6 mt-10 rounded-2xl font-bold tracking-wide text-xl  justify-center inline-flex cursor-pointer"
+              className="bg-pink-600 md:px-10 py-6 mt-10 rounded-2xl font-bold tracking-wide text-xl  justify-center inline-flex cursor-pointer"
             >
               <svg
                 className="h-6 w-6 mr-2 mt-1 text-white"

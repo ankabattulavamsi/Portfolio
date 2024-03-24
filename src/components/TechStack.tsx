@@ -12,11 +12,11 @@ const TechStack = () => {
           </h1>
         </div>
       </div>
-      <div className="grid grid-cols-7 gap-16">
+      <div className="grid md:grid-cols-8 grid-cols-3 gap-6">
         {skillSet?.map((skill) => (
-          <div key={skill.id} className=" ">
+          <div key={skill.id} className="  rounded-xl ">
             <img
-              className="w-40 h-32 border-box object-contain border border-slate-500 p-6 rounded-3xl cursor-pointer shadow-2xl bg-gray-700 hover:bg-gray-500 hover:border-blue-600 hover:border-2 hover:shadow-blue-500 "
+              className="rounded-xl md:h-[100px] h-[70px] w-[100px] px-3 py-2 bg-slate-500"
               src={skill.img}
               alt="skill"
             />

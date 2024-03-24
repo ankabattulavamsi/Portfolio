@@ -15,7 +15,7 @@ const Projects = () => {
         </p>
       </div>
 
-      <div className=" grid grid-cols-4 gap-6">
+      <div className=" grid md:grid-cols-4 gap-6">
         {projectsList.map((project) => (
           // <div key={project.id} classNameName="relative w-4/12  group/item ">
           //   <img
@@ -39,7 +39,7 @@ const Projects = () => {
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-            <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+            <div className="absolute inset-0 flex translate-y-[55%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
               <h1 className="font-dmserif text-3xl font-bold text-white">
                 {project.title}
               </h1>
@@ -51,7 +51,9 @@ const Projects = () => {
                   See More
                 </button>
                 <button className="rounded-full bg-pink-600 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
-                  Live Link
+                  <a href={project.path} target="_blank">
+                    Live Link
+                  </a>
                 </button>
               </div>
             </div>
