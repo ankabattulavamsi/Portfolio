@@ -1,39 +1,14 @@
-import { useState } from "react";
 import { socialIcons } from "../constants/SocialMedia";
 import Typewriter from "./Typewriter";
+import profileImg from "../assets/PorjectImages/mypicture.jpeg";
 
 const Profile = () => {
-  const [activeSocial, setActiveSocial] = useState(
-    "linkedin.com/in/vamsi-ankabattula-a42b031b6"
-  );
   const phrases = [
     "a Developer",
     "Android App Developer",
     "an Engineer",
     "a Web Designer",
   ];
-
-  const downloadPDF = () => {
-    // Constructing a blob with the PDF data
-    const pdfBlob = new Blob(
-      [
-        "https://docs.google.com/document/d/1HUIQ2CU0jwJxFt8ZQnOZ9mXVbqCXQx4sjP2W21V_MKY/edit",
-      ],
-      {
-        type: "application/pdf",
-      }
-    );
-
-    // Creating a temporary anchor element
-    const downloadLink = document.createElement("a");
-    downloadLink.href = window.URL.createObjectURL(pdfBlob);
-
-    // Setting the file name for the download
-    downloadLink.download = "../../public/example.pdf";
-
-    // Simulating a click on the anchor element to trigger the download
-    downloadLink.click();
-  };
 
   return (
     <div className="md:flex  md:justify-between py-16">
@@ -43,7 +18,7 @@ const Profile = () => {
             Hello, i'm <br /> Vamsi Ankabattula
           </h1>
 
-          <div className="h-20 text-center">
+          <div className="md:h-20 h-24 text-center">
             <Typewriter phrases={phrases} />
           </div>
 
@@ -53,10 +28,7 @@ const Profile = () => {
           </p>
 
           <div className=" md:flex space-y-6 md:space-y-0 py-16">
-            <button
-              // onClick={downloadPDF}
-              className="border-[#13C5FD] border-2 px-16 py-4 mx-auto text-xl font-bold tracking-wider rounded-lg w-full md:w-auto"
-            >
+            <button className="border-[#13C5FD] border-2 px-16 py-4 mx-auto text-xl font-bold tracking-wider rounded-lg w-full md:w-auto">
               <a
                 href="https://drive.google.com/file/d/1OaSdDmRbq_0QHA_GzMZbotrqHu_tVxDu/view?usp=sharing"
                 target="_blank"
@@ -82,7 +54,7 @@ const Profile = () => {
         </div>
         <img
           className="rounded-3xl w-full p-4 self-center"
-          src="https://a.storyblok.com/f/191576/1200x800/faa88c639f/round_profil_picture_before_.webp"
+          src={profileImg}
           alt=""
         />
 
@@ -99,7 +71,6 @@ const Profile = () => {
         <ul className="flex justify-evenly">
           {socialIcons?.map((social: any) => (
             <a
-              //   onClick={() => (window.location.href = social.path)}
               href={social.path}
               target="_blank"
               className="rounded-full border border-slate-500 p-2 cursor-pointer hover:border-[#13C5FD]"
@@ -111,7 +82,7 @@ const Profile = () => {
 
         <div className="flex justify-center py-4 w-full">
           <button className="border border-[#13C5FD] w-full py-4 rounded-xl font-bold tracking-widest">
-            Hire Me
+            <a href="#contact">Hire Me</a>
           </button>
         </div>
       </div>

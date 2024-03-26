@@ -48,7 +48,7 @@ export const projectsList = [
   },
   {
     id: 6,
-    title: "Podcosts",
+    title: "podcast`s",
     path: "https://podcosts.ccbp.tech/",
     img: podcostImg,
     about:

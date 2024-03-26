@@ -4,7 +4,11 @@ import { skills } from "../constants/Skills";
 const About = () => {
   return (
     <div className="md:mx-10 mx-4 w-full">
-      <h1 className="font-bold text-center text-4xl leading-loose">About Me</h1>
+      <div className="flex justify-center">
+        <h1 className="font-bold text-center text-4xl leading-loose inline-block after:block after:border-b-4 after:border-pink-600">
+          About Me
+        </h1>
+      </div>
       <div className="flex justify-center py-6">
         <h1 className="text-center text-slate-300 text-xl md:w-6/12">
           Here you will find more information about me, what I do, and my
@@ -61,7 +65,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="md:flex md:justify-around lg:flex lg:justify-around py-10 pb-24 ">
+      <div className="block md:none  md:flex md:justify-around lg:flex lg:justify-around py-10 pb-24 ">
         <div>
           <h1 className="text-center font-bold font-serif text-3xl my-6">
             Education

@@ -5,8 +5,12 @@ const TechStack = () => {
   return (
     <div className="w-full ">
       <div className="flex justify-center w-full">
-        <div>
-          <h1 className="text-center font-bold text-4xl">My Tech Stack</h1>
+        <div className="">
+          <div className="flex justify-center">
+            <h1 className="inline-block leading-10 text-center font-bold text-4xl after:block after:border-b-4 after:border-pink-600">
+              My Tech Stack
+            </h1>
+          </div>
           <h1 className="text-center font-normal text-lg py-4">
             Technologies i've been working with recently
           </h1>

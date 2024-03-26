@@ -50,14 +50,14 @@ const Contact = () => {
     setMessage("");
   };
   return (
-    <div className=" px-16 bg-[#2D0249] py-10 relative">
+    <div className=" md:px-16 bg-[#2D0249] py-10 relative">
       <div className="text-center pb-10">
         <h1 className="inline-block font-bold text-4xl text-white after:content-[''] after:block after:border-b-4 after:border-pink-600 after:mt-1">
           Contact
         </h1>
       </div>
       <div className="md:flex md:justify-evenly space-y-10">
-        <div className="md:w-4/12">
+        <div className="md:w-4/12 mx-6">
           <h1 className="font-bold text-4xl mb-16 leading-tight tracking-wider">
             Let's discuss <br /> on something
             <span className="text-pink-600"> cool </span> <br /> together
@@ -85,7 +85,7 @@ const Contact = () => {
           </ul>
         </div>
 
-        <div className="md:w-4/12 bg-grey px-10 py-6 bg-white rounded-2xl">
+        <div className="md:w-4/12 bg-grey px-10 py-6 bg-white rounded-2xl mx-4 md:mx-0">
           <h1 className="text-black py-4 font-semibold mb-4">
             Have a question or want to work together?
           </h1>
